@@ -1,74 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhileOfOne University</title>
+    <meta name="description" content="Join WhileOfOne University and become a job-ready full-stack developer in 5 months.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
 
 <header>
-    <h1>Abishek S</h1>
+    <h1>W∞ University</h1>
     <nav>
-        <a href="#about">About</a> |
-        <a href="#skills">Skills</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#contact">Contact</a>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="#program">Program</a>
+        <a href="#apply">Apply</a>
     </nav>
 </header>
 
 <main>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a developer skilled in Java, React JS, and PHP. I enjoy building web applications.</p>
-    </section>
-    <form action="register">
-       <input type="text" name="name" placeholder="Enter your name">
-       <input type="email" name="email" placeholder="Enter your email">
-        <input type="number" name="number" placeholder="Enter your phoneNo">
-         <input type="password" name="password" placeholder="Enter your password">
-         <input type="date"name="dob" placeholder="Enter your dob">
-         <input type="number" min="18" max="68" placeholder="Enter your Age">
-         <input type="radio" name="course" placeholder="Enter your course">
-         <input type="checkbox" name="agree" placeholder="Enter your suggestion">
-         <button type="reset">reset</button>
-    
+<!-- HERO -->
+<section class="hero">
+    <h2>Become a Job-Ready Developer in 5 Months</h2>
+    <p>Learn by building real-world projects with expert guidance.</p>
+
+    <div class="cta">
+        <a href="#apply" class="btn primary">Apply Now</a>
+        <a href="#about" class="btn secondary">Learn More</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>What is WhileOfOne University?</h2>
+    <p>A hands-on coding program designed to turn beginners into industry-ready developers.</p>
+
+    <ul>
+        <li>Duration: 5 Months</li>
+        <li>Location: Chennai</li>
+        <li>Mode: In-Person</li>
+        <li>Batch Size: Limited</li>
+    </ul>
+</section>
+
+<!-- PROGRAM -->
+<section id="program">
+    <h2>Program Structure</h2>
+
+    <div class="flex">
+        <article class="card">
+            <h3>Phase 1</h3>
+            <p>Core Stack + Daily Execution</p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React & Node.js</li>
+                <li>Deployment</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h3>Phase 2</h3>
+            <p>Live Projects + Team Workflow</p>
+            <ul>
+                <li>Real-world projects</li>
+                <li>Team collaboration</li>
+                <li>₹10,000 stipend</li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<!-- OUTCOMES -->
+<section id="outcomes">
+    <h2>What You Will Achieve</h2>
+
+    <div class="grid">
+        <article class="card">5+ Real Projects</article>
+        <article class="card">GitHub Portfolio</article>
+        <article class="card">Live Deployments</article>
+        <article class="card">Mobile App</article>
+        <article class="card">AI Project</article>
+        <article class="card">₹10,000 Stipend</article>
+        <article class="card">Interview Ready</article>
+    </div>
+</section>
+
+<!-- FEE -->
+<section id="fee">
+    <h2>Program Fee</h2>
+
+    <article class="pricing">
+        <p>Total: ₹35,000</p>
+        <p>Advance: ₹5,000</p>
+        <p>Installments Available</p>
+        <p><strong>Effective Cost: ₹25,000</strong></p>
+    </article>
+</section>
+
+<!-- TESTIMONIAL -->
+<section id="testimonial">
+    <blockquote>
+        "This program completely changed my career. I built real projects and got job-ready."
+    </blockquote>
+</section>
+
+<!-- APPLY FORM -->
+<section id="apply">
+    <h2>Apply Now</h2>
+
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required minlength="3">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone">
+
+        <label for="course">Course Interest</label>
+        <select id="course">
+            <option>Full Stack Development</option>
+            <option>Frontend</option>
+            <option>Backend</option>
+        </select>
+
+        <label for="message">Why do you want to join?</label>
+        <textarea id="message"></textarea>
+
+        <button type="submit" class="btn primary">Apply Now</button>
     </form>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ol>
-            <li>Java</li>
-            <li>React JS</li>
-            <li>HTML</li>
-            <li>MySQL</li>
-        </ol>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <article>
-            <h3>Ecommerce Websites</h3>
-            <p>Developed using Java and MySQL with login and product features.</p>
-        </article>
-
-        <article>
-            <h3>Student Management System</h3>
-            <p>Created using HTML and React JS to showcase my work.</p>
-        </article>
-
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: abishekucep@example.com</p>
-        <p>Phone: +91 6381543397</p>
-    </section>
+</section>
 
 </main>
 
 <footer>
-    <p>© 2026 Abishek S</p>
+    <p>© 2026 WhileOfOne University</p>
+    <a href="#">woouniversity.in</a>
+    <a href="#">GitHub</a>
 </footer>
 
 </body>
